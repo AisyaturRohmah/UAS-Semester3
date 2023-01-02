@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="/static/dress/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="/static/dress/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="/static/dress/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dress/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="/static/dress/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="/static/dress/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="/static/dress/plugins/summernote/summernote-bs4.min.css">
+</head>
+<body>
+    <img style="width :100%" src="{% static 'dress/img/dress.jpg' %}" alt="">
+    
+    <h2> Store Catalog Dress</h2> 
+    <div class="card-body">
+        <div>
+            <div class="btn-group w-100 mb-2">
+              <a class="btn btn-info active" href="javascript:void(0)" data-filter="all"> items </a>
+              <a class="btn btn-info" href="javascript:void(0)" data-filter="1"> Body </a>
+              <a class="btn btn-info" href="javascript:void(0)" data-filter="2"> Colour </a>
+              <a class="btn btn-info" href="javascript:void(0)" data-filter="3"> Stok </a>
+              <a class="btn btn-info" href="javascript:void(0)" data-filter="4"> Price </a>
+              <a class="btn btn-info" href="javascript:void(0)" data-filter="5"> Discond </a>
+            </div>
+          <div class="mb-2">
+            <a class="btn btn-secondary" href="javascript:void(0)" data-shuffle> Cari disini </a>
+            <div class="float-right">
+              <select class="custom-select" style="width: auto;" data-sortOrder>
+                <option value="index"> Sort by Position </option>
+                <option value="sortData"> Sort by Custom Data </option>
+              </select>
+              <div class="btn-group">
+                <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Keranjang </a>
+                <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Pesanan </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="filter-container p-0 row">
+            <div class="filtr-item col-sm-2" data-category="1" data-sort="Hanako dress">
+              <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="lightbox" data-title="sample 1 - white">
+                <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="Hanako dress"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="Model arabian look">
+              <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black">
+                <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="Size S,M,L,XL "/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
+              <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red">
+                <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="Mauve,Khaki,Dark milo"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
+              <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="lightbox" data-title="sample 4 - red">
+                <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="1189 pcs"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black">
+                <img src="https://via.placeholder.com/300/000000?text=5" class="img-fluid mb-2" alt="Rp.180.000"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+              <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white">
+                <img src="https://via.placeholder.com/300/FFFFFF?text=6" class="img-fluid mb-2" alt="15%"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+              <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white">
+                <img src="https://via.placeholder.com/300/FFFFFF?text=7" class="img-fluid mb-2" alt="Bellia dress"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="Size S,M,L,XL"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="pink pastel,mauve"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="1288 pcs"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="Rp.325.000"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt=""/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="Theressa dress"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="S,M,L,XL"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="Hitam , Mocca"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="975 pcs"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="Rp.215.000"/>
+              </a>
+            </div>
+            <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+              <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                  <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="15%"/>
+              </a>
+            
+            
+              
+          </div>
+        </div>
+
+      </div>
+    {% for post in posts %}
+
+        <div>
+            <h3>(1) {{ post.title }}</h3>
+            <p>{{ post.body }}</p>
+             <img style="width :30%" src="{% static 'dress/img/dress1.jpg' %}" alt="">
+        </div>
+        
+        
+       <div>
+        <h3>
+            (2){{ post.title }}
+        </h3>
+        <p>{{ post.body }}</p>
+        <img style="width :30%" src="{% static 'dress/img/dress2.jpg' %}" alt="">
+       </div>
+    
+      
+    <div>
+        <h3>(3) {{ post.title }}
+        </h3>
+        <p>{{ post.body }}</p>
+        <img style="width :30%" src="{% static 'dress/img/dress3.jpg' %}" alt="">
+    </div>
+    
+    {% endfor %}
+    
+
+
+    <script src="/static/dress/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="/static/dress/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="/static/dress/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="/static/dress/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="/static/dress/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="/static/dress/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="/static/dress/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="/static/dress/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="/static/dress/plugins/moment/moment.min.js"></script>
+<script src="/static/dress/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="/static/dress/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="/static/dress/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="/static/dress/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dress/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/dress/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/static/dress/dist/js/pages/dashboard.js"></script>
+</body>
+</html>
